@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 public class Botao extends JFrame{
 	
 	private int jogador = 1;
-	private String marcador = "";
+	private String marcador = "X";
 	private int jogadas = 0;
 	
 	
@@ -61,11 +61,16 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l1c1.setText(marcador);
 				l1c1.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l1c1.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l1c1.getText()+ " venceu");
+				
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
+				
 			}
 		});
 		
@@ -75,11 +80,15 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l1c2.setText(marcador);
 				l1c2.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l1c2.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l1c2.getText()+ " venceu");
+				
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
 			}
 		});
 		
@@ -89,11 +98,16 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l1c3.setText(marcador);
 				l1c3.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l1c3.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l1c3.getText()+ " venceu");
+				
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
+						
 			}
 		});
 		
@@ -103,11 +117,15 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l2c1.setText(marcador);
 				l2c1.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l2c1.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l2c1.getText()+ " venceu");
+				
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
 			}
 		});
 		
@@ -117,11 +135,15 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l2c2.setText(marcador);
 				l2c2.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l2c2.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l2c2.getText()+ " venceu");
+				
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
 			}
 		});
 		
@@ -131,11 +153,15 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l2c3.setText(marcador);
 				l2c3.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l2c3.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l2c3.getText()+ " venceu");
+				
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
 			}
 		});
 		
@@ -145,11 +171,15 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l3c1.setText(marcador);
 				l3c1.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l3c1.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l3c1.getText()+ " venceu");
+
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
 			}
 		});
 		
@@ -159,11 +189,15 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l3c2.setText(marcador);
 				l3c2.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l3c2.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l3c2.getText()+ " venceu");
+				
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
 			}
 		});
 		
@@ -173,11 +207,15 @@ public class Botao extends JFrame{
 				defineMarcador();
 				l3c3.setText(marcador);
 				l3c3.setEnabled(false);
+				jogadas++;
 				if(testeTriunfo() == true && jogador ==1)
-					JOptionPane.showMessageDialog(null, "Jogador 1 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l3c3.getText()+" venceu");
 				
 				else if(testeTriunfo() == true && jogador ==2)
-					JOptionPane.showMessageDialog(null, "Jogador 2 venceu");
+					JOptionPane.showMessageDialog(null, "Jogador " +l3c3.getText()+ " venceu");
+				
+				else if (jogadas == 9)
+					JOptionPane.showMessageDialog(null, "Empate (ou velha a depender da sua idade)");
 			}
 		});
 	}
